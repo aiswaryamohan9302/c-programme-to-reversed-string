@@ -1,0 +1,50 @@
+#include <iostream>
+
+
+using namespace std;
+
+class reversal
+{
+     private:string str;
+             int i;
+            
+     
+     public:void input();
+            void reverse();
+            void display();
+          
+};
+
+void reversal::input()
+{
+     cout<<"enter the string to be reversed: ";
+     cin>>str;
+}
+void reversal::reverse()
+{
+    for(int i=str.length()-1;i>=0;i--)
+    {
+         cout<<str[i];
+         
+    }
+     
+}
+void reversal::display()
+{
+    
+         cout<<str[i]<<"  is the reversed string ";
+         
+    
+     
+}
+int main()
+{
+     reversal rev;
+     rev.input();
+     rev.reverse();
+     rev.display();
+     
+     return 0;
+}
+
+
